@@ -77,7 +77,7 @@
 
 .title {
   font-size: 13px;
-  text-indent: -0.5em;
+  letter-spacing: -0.09em;
   margin: 0;
   padding: 0;
   color: #454d64;
@@ -86,7 +86,6 @@
 .cost {
   font-size: 12px;
   margin: 0;
-  text-indent: -1em;
 }
 
 .span-price {

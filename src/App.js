@@ -27,14 +27,14 @@ function App() {
         <Card 
           img={Alex}
           ratingScore="5.0"
-          title="Life lessons with Kent"
+          title="My own picture for testing"
           price="2500"
         />
 
         <Card 
           img={Divine}
           ratingScore="4.5"
-          title="Life lessons with Kent"
+          title="Life lessons Demo image"
           price="1500"
         />
       </div>

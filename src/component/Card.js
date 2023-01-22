@@ -8,7 +8,7 @@ function Card(props) {
                 <img src={Star} alt="star" className="star-pic"/>
                 <span>{props.ratingScore} (6) USA</span>
             </p>
-            <p className="title">Life lessons with Kent</p>
+            <p className="title">{props.title}</p>
             <p className="cost">
                 <span className="span-price">From {props.price}</span> / person
             </p>
