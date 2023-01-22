@@ -1,9 +1,9 @@
 import HeroImage from "../images/photo-grid.png"
 function Hero() {
     return(
-        <div className="hero">
+        <section className="hero">
             <img className="hero-image" src={ HeroImage } alt="hero-pic"/>
-        </div>
+        </section>
     )
 }
 

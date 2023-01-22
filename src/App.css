@@ -36,3 +36,57 @@
 .experience {
   padding: 10px 30px;
 }
+
+.card-container {
+  margin: 0 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.card1, .card2, .card3 {
+  width: 150px;
+}
+
+.card2 {
+  margin: 0 10px;
+}
+
+.person-image {
+  width: 150px;
+  height: 180px;
+  border-radius: 5px;
+}
+
+.star {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 12px;
+}
+
+.star-pic {
+  height: 13px;
+}
+
+.title {
+  font-size: 13px;
+  text-indent: -0.5em;
+  margin: 0;
+  padding: 0;
+  color: #454d64;
+  text-align: center;
+}
+
+.cost {
+  font-size: 12px;
+  margin: 0;
+  text-indent: -1em;
+  text-align: center;
+}
+
+.span-price {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
