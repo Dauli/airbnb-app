@@ -6,7 +6,7 @@ function Card(props) {
             <img className="person-image" src={props.img} alt="person" />
             <p className="star">
                 <img src={Star} alt="star" className="star-pic"/>
-                <span>{props.ratingScore} (6) USA</span>
+                <span>{props.ratingScore} ({props.ratingCount}). {props.country}</span>
             </p>
             <p className="title">{props.title}</p>
             <p className="cost">

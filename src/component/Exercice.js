@@ -1,21 +1,13 @@
-
-function Exercice() {
-  const date = new Date()
-  const hours = date.getHours()
-
-  let timeofDay
-
-  if(hours < 12) {
-    timeofDay = "morning";
-  } else if(hours >= 12 && hours < 17) {
-    timeofDay = "afternoon"
-  } else {
-    timeofDay = "night"
-  }
-
-  return(
-    <h1>Good {timeofDay}!</h1>
-  )
+const person = {
+  img: "../images/Divine.jpg",
+  title: "Lesson's life",
+  name: "Divine"
 }
 
-export default Exercice 
+// print object
+console.log(person.img)
+
+// destructing object
+const {img, name} = person
+
+console.log(name)

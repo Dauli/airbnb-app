@@ -3,40 +3,31 @@ import Navbar from './component/Navbar';
 import Hero from './component/Hero';
 import Experience from './component/Experience';
 import Card from './component/Card';
-import Katie from "./images/katie-zaferes.png"
-import Alex from "./images/AlexisDauli.jpg"
-import Divine from "./images/Divine.jpg"
-
+import dataAPI from "./data.js"
 
 function App() {
+
+  console.log(dataAPI)
+
+  const dataElements = dataAPI.map(data => {
+    return <Card 
+      img={data.coverImg}
+      ratingScore={data.stats.rating}
+      ratingCount={data.stats.reviewCount}
+      country={data.location}
+      title={data.title}
+      price={data.price}
+    />
+  }) 
+
   return (
     <div className="App">
-      
       <Navbar />
       <Hero />
       <Experience />
 
       <div className='cards'>
-        <Card 
-          img={Katie}
-          ratingScore="4.0"
-          title="Life lessons with Kent"
-          price="200"
-        />
-
-        <Card 
-          img={Alex}
-          ratingScore="5.0"
-          title="My own picture for testing"
-          price="2500"
-        />
-
-        <Card 
-          img={Divine}
-          ratingScore="4.5"
-          title="Life lessons Demo image"
-          price="1500"
-        />
+        {dataElements}
       </div>
     </div>
   );
