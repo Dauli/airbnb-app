@@ -13,7 +13,7 @@ export default [
             rating: 5.0,
             reviewCount: 6
         },
-        location: "Online",
+        location: "UK",
         openSpots: 0,
     },
     {

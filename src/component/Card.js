@@ -2,17 +2,21 @@ import Star from "../images/star.png"
 
 function Card(props) {
     return(
-        <section className="card-container">
-            <img className="person-image" src={props.img} alt="person" />
-            <p className="star">
-                <img src={Star} alt="star" className="star-pic"/>
-                <span>{props.ratingScore} ({props.ratingCount}). {props.country}</span>
+        <div className="card">
+            {props.openSpots === 0 && <div className="card-badge">SOLD OUT</div>}
+            <img className="card-image" src={props.img} alt="person" />
+            <div className="card-stats">
+                <img src={Star} alt="star" className="card-star"/>
+                <span>{props.ratingScore}</span>
+                <span>({props.ratingCount}). </span>  
+                <span> {props.country}</span>
+            </div>
+            <p className="card-title">{props.title}</p>
+            <p className="card-cost">
+                <span className="card-price">From {props.price}</span> 
+                / person
             </p>
-            <p className="title">{props.title}</p>
-            <p className="cost">
-                <span className="span-price">From {props.price}</span> / person
-            </p>
-        </section>        
+        </div>        
     )
 }
 
