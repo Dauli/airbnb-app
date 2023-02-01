@@ -6,7 +6,7 @@ import Card from './component/Card';
 import dataAPI from "./data.js"
 
 function App() {
-  const cards = dataAPI.map( data => <Card data={data} /> )
+  const cards = dataAPI.map( data => <Card key={data.id} {...data} /> )
   
   return (
     <div className="App">
