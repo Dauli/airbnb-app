@@ -1,6 +1,6 @@
 .App {
-  width: 550px;
-  height: 853px;
+  max-width: 550px;
+  min-height: 853px;
   margin: auto;
 
   border-radius: 10px;
@@ -97,7 +97,12 @@
   top: 6px;
   left: 6px;
   background-color: #e9ebee;
+  color: red;
   padding: 5px 7px;
   border-radius: 2px;
   font-weight: bold;
+}
+
+.card-online {
+  color: green;
 }

@@ -2,7 +2,7 @@ import Katie from "./images/katie-zaferes.png"
 import Mountain from "./images/mountain-bike.png"
 import Wedding from "./images/wedding-photography.png"
 
-export default [
+const dataAPI = [
     {
         id: 1,
         title: "Life Lessons with Katie Zaferes",
@@ -10,8 +10,8 @@ export default [
         price: 136,
         coverImg: `${Katie}`,
         stats: {
-            rating: 5.0,
-            reviewCount: 6
+            rating: 0.0,
+            reviewCount: 0
         },
         location: "UK",
         openSpots: 0,
@@ -41,5 +41,20 @@ export default [
         },
         location: "Norway",
         openSpots: 3,
+    },
+    {
+        id: 4,
+        title: "Group Mountain Biking",
+        description: "Experience the beautiful Norwegian landscape and meet new friends all while conquering rugged terrain on your mountain bike. (Bike provided!)",
+        price: 50,
+        coverImg: `${Mountain}`,
+        stats: {
+            rating: 4.8,
+            reviewCount: 2
+        },
+        location: "Norway",
+        openSpots: 3,
     }
 ]
+
+export default dataAPI
