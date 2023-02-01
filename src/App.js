@@ -6,20 +6,8 @@ import Card from './component/Card';
 import dataAPI from "./data.js"
 
 function App() {
-  const dataElements = dataAPI.map(data => {
-    return (<Card 
-              key={data.id}
-              img={data.coverImg}
-              ratingScore={data.stats.rating}
-              ratingCount={data.stats.reviewCount}
-              country={data.location}
-              title={data.title}
-              price={data.price}
-              openSpots={data.openSpots}
-          />
-    )
-  });
-
+  const cards = dataAPI.map( data => <Card data={data} /> )
+  
   return (
     <div className="App">
       <Navbar />
@@ -27,7 +15,7 @@ function App() {
       <Experience />
 
       <section className='cards-list'>
-        {dataElements}
+        {cards}
       </section>
     </div>
   );
