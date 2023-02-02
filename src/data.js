@@ -1,6 +1,7 @@
 import Katie from "./images/katie-zaferes.png"
 import Mountain from "./images/mountain-bike.png"
 import Wedding from "./images/wedding-photography.png"
+import Sophia from "./images/sophia.jpg"
 
 const dataAPI = [
     {
@@ -44,15 +45,15 @@ const dataAPI = [
     },
     {
         id: 4,
-        title: "Group Mountain Biking",
+        title: "A Beautiful Child Sitting",
         description: "Experience the beautiful Norwegian landscape and meet new friends all while conquering rugged terrain on your mountain bike. (Bike provided!)",
-        price: 50,
-        coverImg: `${Mountain}`,
+        price: 250,
+        coverImg: `${Sophia}`,
         stats: {
-            rating: 4.8,
-            reviewCount: 2
+            rating: 5.8,
+            reviewCount: 200
         },
-        location: "Norway",
+        location: "France",
         openSpots: 3,
     }
 ]
